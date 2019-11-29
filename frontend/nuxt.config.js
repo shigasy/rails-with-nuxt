@@ -1,5 +1,5 @@
 
-export default {
+const config = {
   mode: 'spa',
   /*
   ** Headers of the page
@@ -41,7 +41,8 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
   /*
   ** Axios module configuration
@@ -63,3 +64,10 @@ export default {
     dir: '../public'
   }
 }
+
+if (process.env.NODE_ENV === 'development') {
+  config.proxy = { '/api': 'http://localhost:3000' }
+}
+
+export default config
+
