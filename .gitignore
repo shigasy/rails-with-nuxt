@@ -25,7 +25,7 @@
 
 /public/packs
 /public/packs-test
-/public/_nuxt
+/public/*
 /node_modules
 /yarn-error.log
 yarn-debug.log*

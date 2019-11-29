@@ -22,3 +22,13 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Railsで 静的 + API のsetup
+```
+$ bundle install
+$ cd frontend
+$ yarn install
+$ yarn generate
+$ cd ..
+$ rails s
+```
