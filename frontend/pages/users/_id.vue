@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  name: "id",
   data: () => ({
     msg: '',
     msg2: ''

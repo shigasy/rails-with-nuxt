@@ -57,10 +57,12 @@ const config = {
     /*
     ** You can extend webpack config here
     */
+    fallback: true,
     extend (config, ctx) {
     }
   },
   generate: {
+    fallback: true,
     dir: '../public'
   },
 }
