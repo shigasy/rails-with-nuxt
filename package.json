@@ -11,5 +11,13 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^3.9.0"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "11.14.0",
+    "yarn": "1.9.4"
+  },
+  "scripts": {
+    "postinstall": "cd frontend && yarn install && yarn build"
   }
 }
